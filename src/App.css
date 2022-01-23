@@ -1,0 +1,65 @@
+.home {
+  background: linear-gradient(to left, red, blue);
+}
+.paginationBttns {
+  width: 80%;
+  height: 30px;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  color: black;
+}
+
+.paginationBttns a {
+  padding: 3px 5px;
+  margin: 8px;
+  border-radius: 5px;
+  border: 1px solid black;
+  color: black;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.paginationBttns a:hover {
+  color: white;
+  background-color: blue;
+}
+
+.paginationActive a {
+  background-color: blue;
+}
+.paginationActive {
+  color: white;
+}
+
+.paginationDisabled a {
+  display: none;
+}
+
+.modal__overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.1);
+  display: grid;
+  place-items: center;
+  visibility: visible;
+  z-index: 10;
+}
+
+.modal__container {
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 1rem;
+  width: 90vw;
+  height: 30vh;
+  max-width: 500px;
+  text-align: center;
+  display: grid;
+  place-items: center;
+  padding: 3rem 3rem;
+  position: relative;
+}
